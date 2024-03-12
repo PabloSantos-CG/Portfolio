@@ -1,10 +1,18 @@
-import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
+"use client";
+import { motion } from "framer-motion";
 import Avatar from "./Avatar";
+import Icons from "./Icons";
 
 export default function About() {
   return (
-    <div className="flex justify-between items-center text-white">
-      <div className="flex flex-col flex-[1.5] gap-y-5">
+    <div className="flex justify-between items-center  text-white">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 100 }}
+        transition={{ delay: 0.5, duration: 1.5 }}
+        className="flex flex-col flex-[1.5] gap-y-5"
+      >
         <h1 className="font-bold text-4xl mb-3">SOBRE MIM</h1>
         <h2 className="font-bold text-3xl">
           Olá, me chamo <span className="text-[#0057BE]">Pablo</span>.
@@ -25,37 +33,8 @@ export default function About() {
           Vamos colaborar e levar sua presença online para o próximo nível
           juntos.
         </p>
-      </div>
-
-      <div className="flex flex-col items-center flex-[.5] gap-y-5 mt-8">
-        <a
-          href="#"
-          className="text-black bg-transparent border border-white hover:bg-white rounded transition-all duration-300"
-        >
-          <FaWhatsapp
-            className="text-white hover:text-black p-1 box-content"
-            size={30}
-          />
-        </a>
-        <a
-          href="#"
-          className="text-black bg-transparent border border-white hover:bg-white rounded transition-all duration-300"
-        >
-          <FaLinkedinIn
-            className="text-white hover:text-black p-1 box-content"
-            size={30}
-          />
-        </a>
-        <a
-          href="#"
-          className="text-black bg-transparent border border-white hover:bg-white rounded transition-all duration-300"
-        >
-          <FaGithub
-            className="text-white hover:text-black p-1 box-content"
-            size={30}
-          />
-        </a>
-      </div>
+        <Icons />
+      </motion.div>
 
       <Avatar />
     </div>
