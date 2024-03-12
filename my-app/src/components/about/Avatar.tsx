@@ -7,7 +7,7 @@ export default function Avatar() {
       initial={{ opacity: 0, y: -100 }}
       whileInView={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -100 }}
-      transition={{ delay: 0.5, duration: 1.5 }}
+      transition={{ delay: 0.3, duration: 1.5 }}
       className="flex justify-end flex-1"
     >
       <Image
