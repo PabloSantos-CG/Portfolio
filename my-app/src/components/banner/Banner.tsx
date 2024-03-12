@@ -19,7 +19,7 @@ export default function Banner() {
         ESTOU AQUI PARA TRANSFORMAR SUAS IDEIAS <br />
         EM REALIDADE!
       </h2>
-      <p className={`${montserrat.className} text-[#DDD8D8] text-base`}>
+      <p className={`${montserrat.className} text-gray-300 text-base`}>
         Navegando pelo vasto universo do desenvolvimento web com entusiasmo
         <br />
         em criar soluções digitais envolventes e eficientes, estou comprometido
@@ -59,7 +59,7 @@ export default function Banner() {
       </div>
       <a href="#">
         <IoIosArrowDown
-          className="text-white hover:text-slate-400 absolute right-1/2 top-[90%] animate-bounce"
+          className="text-white hover:text-slate-400 absolute left-1/2 top-[90%] animate-bounce"
           size={30}
         />
       </a>
