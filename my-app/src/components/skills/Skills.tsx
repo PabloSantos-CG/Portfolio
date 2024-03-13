@@ -6,7 +6,7 @@ import { aboutSkills, aboutAcademic, titlesAbout } from "@/data/dataAbout";
 export default function Skills() {
   const [index, setIndex] = useState(0);
   return (
-    <section className="flex items-center max-w-6xl m-auto h-screen">
+    <div className="flex items-center">
       <div className="flex items-baseline gap-x-12 text-white">
         <div className="flex justify-between items-center flex-1">
           <motion.div
@@ -63,7 +63,10 @@ export default function Skills() {
                     <p className="text-blue-600">{item.title}</p>
                     <div className="flex items-center gap-x-2">
                       {item.icons.map((icon, iconIndex) => (
-                        <span key={iconIndex} className="hover:text-blue-600 duration-300">
+                        <span
+                          key={iconIndex}
+                          className="hover:text-blue-600 duration-300"
+                        >
                           {icon}
                         </span>
                       ))}
@@ -82,6 +85,6 @@ export default function Skills() {
           </div>
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 }

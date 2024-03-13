@@ -10,3 +10,7 @@ body {
 .h-full-Home {
   height: calc(100vh - 86.23px);
 }
+
+.max-w-slide {
+  width: calc(100% - 361px);
+}
