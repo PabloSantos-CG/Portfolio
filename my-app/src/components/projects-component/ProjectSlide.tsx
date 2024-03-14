@@ -23,12 +23,12 @@ export default function ProjectsSlide() {
       modules={[FreeMode, Pagination]}
     >
       <SwiperSlide>
-        <div className="bg-[rgba(66,63,251,0.15)] h-full rounded-lg px-6 py-8 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300 relative">
+        <div className="bg-[#c8c8c83c] h-full rounded-lg px-3 py-3 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#b1b1b126] transition-all duration-300 relative">
           <div className="bgcontainer-constructionProjects w-full h-full rounded-lg"></div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className="bg-[rgba(66,63,251,0.15)] h-full rounded-lg px-6 py-8 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+        <div className="bg-[#c8c8c83c] h-full rounded-lg px-3 py-3 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#b1b1b126] transition-all duration-300 relative">
           <div className="bgcontainer-constructionProjects w-full h-full rounded-lg"></div>
         </div>
       </SwiperSlide>

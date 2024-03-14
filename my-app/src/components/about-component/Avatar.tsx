@@ -15,7 +15,7 @@ export default function Avatar() {
         alt="Avatar"
         width={320}
         height={320}
-        priority
+        quality={70}
         className="rounded-full border-4 border-white"
       />
     </motion.div>

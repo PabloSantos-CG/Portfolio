@@ -32,3 +32,9 @@ body {
 .bgcontainer-constructionProjects:hover::after {
   content: none;
 }
+
+@layer base {
+  .input {
+    @apply h-10 pl-2 rounded-lg bg-transparent border border-gray-400 text-gray-200;
+  }
+}

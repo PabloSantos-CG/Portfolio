@@ -57,7 +57,7 @@ export default function Banner() {
           />
         </a>
       </div>
-      <a href="#">
+      <a href="#About">
         <IoIosArrowDown
           className="text-white hover:text-slate-400 absolute left-1/2 top-[90%] animate-bounce"
           size={30}
