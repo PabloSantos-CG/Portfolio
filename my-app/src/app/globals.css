@@ -14,3 +14,21 @@ body {
 .max-w-slide {
   width: calc(100% - 361px);
 }
+
+.bgcontainer-constructionProjects {
+  position: relative;
+  background: url("/constructionAlert.png") center center no-repeat;
+  background-size: cover;
+}
+.bgcontainer-constructionProjects::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #00000055;
+}
+.bgcontainer-constructionProjects:hover::after {
+  content: none;
+}

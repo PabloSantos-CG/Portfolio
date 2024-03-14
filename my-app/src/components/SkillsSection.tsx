@@ -1,4 +1,4 @@
-import Skills from "./skills/Skills";
+import Skills from "./skills-component/Skills";
 
 export default function SkillsSection() {
   return (

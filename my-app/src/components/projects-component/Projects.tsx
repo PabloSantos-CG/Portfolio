@@ -1,8 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import ServiceSlide from "./ServiceSlide";
+import ProjectsSlide from "./ProjectSlide";
 
-export default function Services() {
+export default function Projects() {
   return (
     <div className="flex items-center gap-x-8 text-white">
       <motion.div
@@ -14,14 +14,11 @@ export default function Services() {
       >
         <h1 className="font-bold text-4xl mb-3">
           MEUS <br />
-          SERVIÇOS
+          PROJETOS
         </h1>
         <p className="text-gray-300">
-          Explorando o vasto campo dos serviços de desenvolvimento web, serviços
-          especializados que não só impulsionam, mas também elevam seu projeto a
-          novos patamares. Ofereço soluções personalizadas, adaptadas para
-          atender às suas necessidades,
-          <strong>garantindo resultados que superam suas expectativas</strong>.
+          Explore minha coleção de projetos. Cada um demonstra meu compromisso
+          em criar soluções eficazes e alcançar resultados cada vez melhores.
         </p>
       </motion.div>
 
@@ -32,7 +29,7 @@ export default function Services() {
         transition={{ delay: 0.3, duration: 1.5 }}
         className="w-2/3"
       >
-        <ServiceSlide />
+        <ProjectsSlide />
       </motion.div>
     </div>
   );

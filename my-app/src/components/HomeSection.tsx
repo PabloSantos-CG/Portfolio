@@ -1,4 +1,4 @@
-import Banner from "./banner/Banner";
+import Banner from "./banner-component/Banner";
 import ParticlesContainer from "@/components/ParticlesContainer";
 
 export default function HomeSection() {
