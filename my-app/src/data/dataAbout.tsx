@@ -63,11 +63,13 @@ export const aboutSkills = {
 export const aboutAcademic = {
   info: [
     {
+      id: nanoid(),
       course: "Análise e Desenvolvimento de Sistemas - ",
       institution: "UniFECAF. ",
       date: "2023 - 2025",
     },
     {
+      id: nanoid(),
       course: "Desenvolvimento FullStack Javascript - ",
       institution: "OneBitCode. ",
       date: "2023",

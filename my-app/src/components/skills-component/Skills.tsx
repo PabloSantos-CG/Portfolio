@@ -62,33 +62,33 @@ export default function Skills() {
             ))}
           </div>
 
-          <div className="flex flex-col gap-y-4">
+          <ul className="flex flex-col gap-y-4">
             {index === 0
               ? aboutSkills.info.map((item) => (
-                  <div key={nanoid(5)} className="flex gap-x-7">
-                    <p className="text-blue-600">{item.title}</p>
-                    <div className="flex items-center gap-x-2">
+                  <li key={nanoid(5)} className="flex gap-x-7">
+                    <span className="text-blue-600">{item.title}</span>
+                    <ul className="flex items-center gap-x-2">
                       {item.icons.map((icon) => (
-                        <span
+                        <li
                           className="hover:text-blue-600 duration-300"
-                          key={nanoid(5)}
-                        > {/*Quem ler queima */}
+                          key={icon.key}
+                        >
                           {icon}
-                        </span>
+                        </li>
                       ))}
-                    </div>
-                  </div>
+                    </ul>
+                  </li>
                 ))
               : aboutAcademic.info.map((item) => (
-                  <div key={nanoid(5)} className="flex gap-x-7">
+                  <li key={item.id} className="flex gap-x-7">
                     <p>
                       <span className="text-blue-600">{item.course}</span>
                       {item.institution}
                       {item.date}
                     </p>
-                  </div>
+                  </li>
                 ))}
-          </div>
+          </ul>
         </motion.div>
       </div>
     </div>

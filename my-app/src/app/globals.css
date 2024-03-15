@@ -33,6 +33,13 @@ body {
   content: none;
 }
 
+.heigth-FirstBoxFooter {
+  height: calc(100% - 64px);
+}
+
+.translate-z-0 {
+  transform: translateZ(0px);
+}
 @layer base {
   .input {
     @apply h-10 pl-2 rounded-lg bg-transparent border border-gray-400 text-gray-200;

@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import {
   HiHome,
   HiUser,
@@ -8,27 +9,32 @@ import {
 
 export const dataNav = [
   {
-    id: "Home",
+    id: nanoid(5),
+    identifier: "Home",
     title: "Início",
     icon: <HiHome />,
   },
   {
-    id: "About",
+    id: nanoid(5),
+    identifier: "About",
     title: "Sobre",
     icon: <HiUser />,
   },
   {
-    id: "Services",
+    id: nanoid(5),
+    identifier: "Services",
     title: "Serviços",
     icon: <HiRectangleGroup />,
   },
   {
-    id: "Projects",
+    id: nanoid(5),
+    identifier: "Projects",
     title: "Projetos",
     icon: <HiViewColumns />,
   },
   {
-    id: "Contact",
+    id: nanoid(5),
+    identifier: "Contact",
     title: "Contato",
     icon: <HiEnvelope />,
   },

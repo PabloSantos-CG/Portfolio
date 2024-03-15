@@ -4,8 +4,8 @@ import Ancor from "./Ancor";
 export default function Nav() {
   return (
     <nav className="flex h-full gap-x-9 items-center">
-      {dataNav.map((value, index) => (
-        <Ancor key={index} url={`#${value.id}`}>
+      {dataNav.map((value) => (
+        <Ancor key={value.id} url={`#${value.identifier}`}>
           <span className="mt-1">{value.icon}</span>
           {value.title}
         </Ancor>

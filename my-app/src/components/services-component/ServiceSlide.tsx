@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { nanoid } from "nanoid";
 
 export default function ServiceSlide() {
   return (
@@ -27,9 +28,9 @@ export default function ServiceSlide() {
       className="h-[240px] sm:h-[370px]"
       modules={[FreeMode, Pagination]}
     >
-      {dataServices.map((item, index) => (
-        <SwiperSlide key={index}>
-          <div className="bg-[rgba(66,63,251,0.15)] h-full rounded-lg px-6 py-8 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300">
+      {dataServices.map((item) => (
+        <SwiperSlide key={nanoid(5)}>
+          <div className="bg-[#423ffb26] h-full rounded-lg px-6 py-8 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[#5941a926] transition-all duration-300">
             <div>
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
 
