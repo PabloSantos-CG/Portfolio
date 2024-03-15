@@ -8,23 +8,28 @@ import {
 
 export const dataNav = [
   {
+    id: "Home",
     title: "Início",
-    icon: <HiHome className="mt-1" />,
+    icon: <HiHome />,
   },
   {
+    id: "About",
     title: "Sobre",
-    icon: <HiUser className="mt-1" />,
+    icon: <HiUser />,
   },
   {
+    id: "Services",
+    title: "Serviços",
+    icon: <HiRectangleGroup />,
+  },
+  {
+    id: "Projects",
     title: "Projetos",
-    icon: <HiViewColumns className="mt-1" />,
+    icon: <HiViewColumns />,
   },
   {
-    title: "Habilidades",
-    icon: <HiRectangleGroup className="mt-1" />,
-  },
-  {
+    id: "Contact",
     title: "Contato",
-    icon: <HiEnvelope className="mt-1" />,
+    icon: <HiEnvelope />,
   },
 ];

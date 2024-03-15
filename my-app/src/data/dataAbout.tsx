@@ -19,6 +19,7 @@ import {
   SiJest,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { nanoid } from "nanoid";
 
 export const titlesAbout = ["Habilidades", "Acadêmico"];
 
@@ -27,33 +28,33 @@ export const aboutSkills = {
     {
       title: "Front-End",
       icons: [
-        <FaHtml5 title="Html" size={22} />,
-        <FaCss3 title="Css" size={22} />,
-        <FaJs title="JavaScript" size={22} />,
-        <SiTypescript title="TypeScript" size={22} />,
-        <SiSass title="Sass" size={22} />,
-        <FaBootstrap title="Bootstrap" size={22} />,
-        <SiTailwindcss title="TailwindCss" size={22} />,
-        <FaReact title="React.Js" size={22} />,
-        <SiNextdotjs title="Next.Js" size={22} />,
+        <FaHtml5 title="Html" size={22} key={nanoid(5)} />,
+        <FaCss3 title="Css" size={22} key={nanoid(5)} />,
+        <FaJs title="JavaScript" size={22} key={nanoid(5)} />,
+        <SiTypescript title="TypeScript" size={22} key={nanoid(5)} />,
+        <SiSass title="Sass" size={22} key={nanoid(5)} />,
+        <FaBootstrap title="Bootstrap" size={22} key={nanoid(5)} />,
+        <SiTailwindcss title="TailwindCss" size={22} key={nanoid(5)} />,
+        <FaReact title="React.Js" size={22} key={nanoid(5)} />,
+        <SiNextdotjs title="Next.Js" size={22} key={nanoid(5)} />,
       ],
     },
     {
       title: "Back-End",
       icons: [
-        <FaNodeJs title="Node.Js" size={22} />,
-        <BiLogoPostgresql title="PostgreSQL" size={22} />,
-        <SiMongodb title="MongoDB" size={22} />,
-        <SiExpress title="Express" size={22} />,
-        <SiSequelize title="Sequelize" size={22} />,
+        <FaNodeJs title="Node.Js" size={22} key={nanoid(5)} />,
+        <BiLogoPostgresql title="PostgreSQL" size={22} key={nanoid(5)} />,
+        <SiMongodb title="MongoDB" size={22} key={nanoid(5)} />,
+        <SiExpress title="Express" size={22} key={nanoid(5)} />,
+        <SiSequelize title="Sequelize" size={22} key={nanoid(5)} />,
       ],
     },
     {
       title: "Outros",
       icons: [
-        <FaGitAlt title="Git" size={22} />,
-        <SiJest title="Jest" size={22} />,
-        <FaFigma title="Figma" size={22} />,
+        <FaGitAlt title="Git" size={22} key={nanoid(5)} />,
+        <SiJest title="Jest" size={22} key={nanoid(5)} />,
+        <FaFigma title="Figma" size={22} key={nanoid(5)} />,
       ],
     },
   ],

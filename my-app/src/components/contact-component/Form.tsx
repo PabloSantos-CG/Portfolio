@@ -43,9 +43,9 @@ export default function ContactForm() {
             placeholder="E-mail"
             className="w-full input"
           />
-          {errors.name && (
+          {errors.email && (
             <p className="text-red-500 text-xs mt-2">
-              {errors.name.message as string}
+              {errors.email.message as string}
             </p>
           )}
         </div>

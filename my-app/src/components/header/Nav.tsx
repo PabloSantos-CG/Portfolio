@@ -5,8 +5,8 @@ export default function Nav() {
   return (
     <nav className="flex h-full gap-x-9 items-center">
       {dataNav.map((value, index) => (
-        <Ancor key={index}>
-          {value.icon}
+        <Ancor key={index} url={`#${value.id}`}>
+          <span className="mt-1">{value.icon}</span>
           {value.title}
         </Ancor>
       ))}

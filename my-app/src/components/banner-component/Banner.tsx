@@ -32,14 +32,15 @@ export default function Banner() {
       {/* Icons */}
       <div className="flex items-center gap-x-3 mt-8">
         <a
-          href="#"
+          href="#Contact"
           className="bg-white py-1 px-4 rounded font-semibold text-lg 
           border hover:border-white hover:bg-transparent hover:text-white duration-300"
         >
           Conversar sobre seu projeto
         </a>
         <a
-          href="#"
+          href="https://www.linkedin.com/in/pablosantos-cg/"
+          target="_blank"
           className="bg-white border hover:border-white hover:bg-black rounded transition-all duration-300"
         >
           <FaLinkedinIn
@@ -48,7 +49,8 @@ export default function Banner() {
           />
         </a>
         <a
-          href="#"
+          href="https://github.com/PabloSantos-CG"
+          target="_blank"
           className="bg-white border hover:border-white hover:bg-black rounded duration-300"
         >
           <FaGithub

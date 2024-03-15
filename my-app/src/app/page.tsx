@@ -4,6 +4,7 @@ import SkillsSection from "@/components/SkillsSection";
 import ServicesSection from "@/components/ServicesSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection.";
+import ParticlesContainer from "@/components/ParticlesContainer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <ProjectsSection />
       <ContactSection />
+      <ParticlesContainer />
     </div>
   );
 }

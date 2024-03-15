@@ -8,13 +8,15 @@ const livvic = Livvic({
 export default function Logo() {
   return (
     <div className={`${livvic.className} text-center p-2`}>
-      <span className={`font-medium text-4xl`}>P</span>
-      <span className={`font-medium text-4xl relative right-2`}>S</span>
-      <p className="text-[.63rem] font-medium text-center">
-        SOFTWARE
-        <br />
-        DEVELOPER
-      </p>
+      <a href="#Home">
+        <span className={`font-medium text-4xl`}>P</span>
+        <span className={`font-medium text-4xl relative right-2`}>S</span>
+        <p className="text-[.63rem] font-medium text-center">
+          SOFTWARE
+          <br />
+          DEVELOPER
+        </p>
+      </a>
     </div>
   );
 }

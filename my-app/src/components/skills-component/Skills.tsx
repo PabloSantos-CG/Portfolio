@@ -2,20 +2,21 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { aboutSkills, aboutAcademic, titlesAbout } from "@/data/dataAbout";
+import { nanoid } from "nanoid";
 
 export default function Skills() {
   const [index, setIndex] = useState(0);
   return (
     <div className="flex items-center">
       <div className="flex items-baseline gap-x-12 text-white">
-        <div className="flex justify-between items-center flex-1">
-          <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 100 }}
-            transition={{ delay: 0.3, duration: 1.5 }}
-            className="flex flex-col flex-[1.5] gap-y-5"
-          >
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 100 }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+          className="flex justify-between items-center flex-1"
+        >
+          <div className="flex flex-col flex-[1.5] gap-y-5">
             <h1 className="font-bold text-4xl mb-3">
               MINHAS <br />
               HABILIDADES
@@ -31,20 +32,20 @@ export default function Skills() {
               Vamos colaborar para construir algo verdadeiramente incrível
               juntos!
             </p>
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -100 }}
-          transition={{ delay: 0.3, duration: 1.5 }}
+          transition={{ delay: 0.2, duration: 0.2 }}
           className="flex-1"
         >
           <div className="flex gap-x-8 mb-10">
             {titlesAbout.map((item, itemIndex) => (
-              <div
-                key={itemIndex}
+              <button
+                key={nanoid(5)}
                 className={`${
                   index === itemIndex &&
                   "text-blue-600 after:w-[100%] after:bg-accent after:transition-all after:duration-300"
@@ -57,29 +58,29 @@ export default function Skills() {
                 }`}
               >
                 {item}
-              </div>
+              </button>
             ))}
           </div>
 
           <div className="flex flex-col gap-y-4">
             {index === 0
-              ? aboutSkills.info.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex gap-x-7">
+              ? aboutSkills.info.map((item) => (
+                  <div key={nanoid(5)} className="flex gap-x-7">
                     <p className="text-blue-600">{item.title}</p>
                     <div className="flex items-center gap-x-2">
-                      {item.icons.map((icon, iconIndex) => (
+                      {item.icons.map((icon) => (
                         <span
-                          key={iconIndex}
                           className="hover:text-blue-600 duration-300"
-                        >
+                          key={nanoid(5)}
+                        > {/*Quem ler queima */}
                           {icon}
                         </span>
                       ))}
                     </div>
                   </div>
                 ))
-              : aboutAcademic.info.map((item, itemIndex) => (
-                  <div key={itemIndex} className="flex gap-x-7">
+              : aboutAcademic.info.map((item) => (
+                  <div key={nanoid(5)} className="flex gap-x-7">
                     <p>
                       <span className="text-blue-600">{item.course}</span>
                       {item.institution}
