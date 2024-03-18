@@ -1,16 +1,20 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import ContactForm from "./Form";
 import { FaWhatsapp } from "react-icons/fa";
+import { useRef } from "react";
 
 export default function Contact() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div className="flex items-center gap-x-8 text-white">
       <motion.div
+        ref={ref}
         initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 100 }}
-        transition={{ delay: 0.2, duration: 0.2 }}
+        animate={isInView ? { opacity: 1, y: 0 } : undefined}
+        transition={{ delay: 0.3, duration: 0.5 }}
         className="w-1/3"
       >
         <h1 className="font-bold text-4xl mb-3">
@@ -36,10 +40,10 @@ export default function Contact() {
       </motion.div>
 
       <motion.div
+        ref={ref}
         initial={{ opacity: 0, y: -100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -100 }}
-        transition={{ delay: 0.2, duration: 0.2 }}
+        animate={isInView ? { opacity: 1, y: 0 } : undefined}
+        transition={{ delay: 0.3, duration: 0.5 }}
         className="w-2/3"
       >
         <ContactForm />

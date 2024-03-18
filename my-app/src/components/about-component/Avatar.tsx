@@ -1,17 +1,21 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
+import { useRef } from "react";
 
 export default function Avatar() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <motion.div
+      ref={ref}
       initial={{ opacity: 0, y: -100 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -100 }}
-      transition={{ delay: 0.3, duration: 1.5 }}
-      className="flex justify-end flex-1"
+      animate={isInView ? { opacity: 1, y: 0 } : undefined}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className="hidden md:flex justify-end flex-1"
     >
       <Image
-        src="/profile.png"
+        src="/profile.webp"
         alt="Avatar"
         width={320}
         height={320}
