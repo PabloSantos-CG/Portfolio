@@ -2,7 +2,10 @@ import Services from "./services-component/Services";
 
 export default function ServicesSection() {
   return (
-    <section id="Services" className="flex flex-col justify-center max-w-6xl m-auto h-screen">
+    <section
+      id="Services"
+      className="container flex mx-auto flex-col justify-center px-4 h-screen"
+    >
       <Services />
     </section>
   );

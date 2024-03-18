@@ -7,7 +7,7 @@ const livvic = Livvic({
 
 export default function Logo() {
   return (
-    <div className={`${livvic.className} text-center hover:text-slate-400 p-2`}>
+    <div className={`${livvic.className} text-center hover:text-slate-400  p-2`}>
       <a href="#Home">
         <span className={`font-medium text-3xl`}>P</span>
         <span className={`font-medium text-3xl relative right-[6px]`}>S</span>

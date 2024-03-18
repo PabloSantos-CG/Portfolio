@@ -19,17 +19,17 @@ export default function ProjectsSlide() {
         },
       }}
       pagination={{ clickable: true }}
-      className="h-[240px] sm:h-[370px]"
+      className=" max-sm:h-[424px] sm:h-[370px]"
       modules={[FreeMode, Pagination]}
     >
-      <SwiperSlide key={nanoid(5)} className="max-w-80">
-        <div className="bg-[#c8c8c83c] h-full rounded-lg px-3 py-3 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#b1b1b126] transition-all duration-300 relative">
+      <SwiperSlide key={nanoid(5)} className="">
+      <div className="bg-[#c8c8c83c] h-full rounded-lg px-3 py-3 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[#b1b1b126] transition-all duration-300 relative">
           <div className="bgcontainer-constructionProjects w-full h-full rounded-lg"></div>
         </div>
       </SwiperSlide>
 
-      <SwiperSlide key={nanoid(5)} className="max-w-80">
-        <div className="bg-[#c8c8c83c] h-full rounded-lg px-3 py-3 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[#b1b1b126] transition-all duration-300 relative">
+      <SwiperSlide key={nanoid(5)} className="">
+        <div className="bg-[#c8c8c83c] h-full rounded-lg px-3 py-3 flex justify-between sm:flex-col gap-x-6 sm:gap-x-0 group hover:bg-[#b1b1b126] transition-all duration-300 relative">
           <div className="bgcontainer-constructionProjects w-full h-full rounded-lg"></div>
         </div>
       </SwiperSlide>

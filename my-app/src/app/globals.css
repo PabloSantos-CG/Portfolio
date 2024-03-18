@@ -17,7 +17,7 @@ body {
 
 .bgcontainer-constructionProjects {
   position: relative;
-  background: url("/constructionAlert.png") center center no-repeat;
+  background: url("/bg-alert.png") center no-repeat;
   background-size: cover;
 }
 .bgcontainer-constructionProjects::after {
