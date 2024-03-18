@@ -11,27 +11,27 @@ export default function Skills() {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="flex flex-col xl:flex-row xl:gap-x-12 gap-y-8 text-white">
+      <div className="flex flex-col xl:flex-row xl:gap-x-12 xl:gap-y-8 gap-y-4 text-white">
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 100 }}
           animate={isInView ? { opacity: 1, y: 0 } : undefined}
           transition={{ delay: 0.3, duration: 0.5 }}
-          className="flex items-center xl:flex-1 text-center xl:text-left"
+          className="flex items-center xl:flex-1"
         >
-          <div className="flex flex-col flex-[1.5] gap-y-5">
+          <div className="flex flex-col flex-[1.5] gap-y-3 xl:gap-y-5">
             <h1 className="font-bold text-2xl md:text-4xl mb-3">
-              MEUS <span className="inline-block xl:block">HABILIDADES</span>
+              MINHAS <span className="inline-block xl:block">HABILIDADES</span>
             </h1>
 
-            <p className="text-gray-300">
+            <p className="text-gray-300 text-xs sm:text-base">
               Como desenvolvedor de software, estou sempre em busca de
               conhecimento e comprometido com a excelência. Minha curiosidade
               natural me impulsiona a melhorar continuamente, e sou apaixonado
               por criar soluções com propósito.
             </p>
 
-            <p className="font-semibold text-gray-300">
+            <p className="font-semibold text-gray-300 text-xs sm:text-base">
               Vamos colaborar para construir algo verdadeiramente incrível
               juntos!
             </p>
@@ -45,14 +45,14 @@ export default function Skills() {
           transition={{ delay: 0.3, duration: 0.5 }}
           className="xl:flex-1 h-44"
         >
-          <div className="flex justify-center xl:justify-start gap-x-8 mb-10">
+          <div className="flex gap-x-8 mb-5 xl:mb-10">
             {titlesAbout.map((item, itemIndex) => (
               <button
                 key={nanoid(5)}
                 className={`${
                   index === itemIndex &&
                   "text-blue-600 after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                } cursor-pointer  xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                 onClick={() => setIndex(itemIndex)}
                 title={`${
                   itemIndex === 0
@@ -65,17 +65,15 @@ export default function Skills() {
             ))}
           </div>
 
-          <ul className="flex flex-col gap-y-4 text-center xl:text-left">
+          <ul className="flex flex-col gap-y-4">
             {index === 0
               ? aboutSkills.info.map((item) => (
                   <li
                     key={nanoid(5)}
-                    className="flex flex-col xl:flex-row justify-center xl:justify-start gap-x-7"
+                    className="flex flex-col xl:flex-row gap-x-7"
                   >
-                    <span className="text-blue-600 mb-2 text-center xl:text-left">
-                      {item.title}
-                    </span>
-                    <ul className="flex justify-center xl:justify-start items-center gap-x-2">
+                    <span className="text-blue-600 mb-2">{item.title}</span>
+                    <ul className="flex items-center gap-x-2">
                       {item.icons.map((icon) => (
                         <li
                           className="hover:text-blue-600 duration-300"

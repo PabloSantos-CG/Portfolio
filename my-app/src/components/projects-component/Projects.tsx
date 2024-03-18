@@ -14,7 +14,7 @@ export default function Projects() {
         initial={{ opacity: 0, y: 100 }}
         animate={isInView ? { opacity: 1, y: 0 } : undefined}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="max-w-[640px] text-center xl:text-left xl:w-1/3"
+        className="max-w-[640px] xl:w-1/3"
       >
         <h1 className="font-bold text-2xl md:text-4xl mb-3">
           MEUS <span className="inline-block xl:block">PROJETOS</span>

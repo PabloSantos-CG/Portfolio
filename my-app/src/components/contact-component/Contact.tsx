@@ -9,17 +9,17 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex items-center gap-x-8 text-white">
+    <div className="flex flex-col xl:flex-row xl:items-center gap-y-8 xl:gap-x-8 text-white">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 100 }}
         animate={isInView ? { opacity: 1, y: 0 } : undefined}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="w-1/3"
+        className="xl:w-1/3"
       >
         <h1 className="font-bold text-4xl mb-3">
-          VAMOS <br />
-          <span className="text-blue-600">CONVERSAR</span>
+          VAMOS{" "}
+          <span className="text-blue-600 inline-block xl:block">CONVERSAR</span>
         </h1>
         <p className="text-gray-300">
           Pronto para tornar suas ideias realidade? <br />
@@ -44,7 +44,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: -100 }}
         animate={isInView ? { opacity: 1, y: 0 } : undefined}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="w-2/3"
+        className="xl:w-2/3"
       >
         <ContactForm />
       </motion.div>

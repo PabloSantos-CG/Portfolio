@@ -25,7 +25,7 @@ export default function ServiceSlide() {
         },
       }}
       pagination={{ clickable: true }}
-      className="h-[240px] sm:h-[370px]"
+      className="h-[240px] sm:h-[340px]"
       modules={[FreeMode, Pagination]}
     >
       {dataServices.map((item) => (
