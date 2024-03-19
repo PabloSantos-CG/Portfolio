@@ -14,7 +14,7 @@ export default function Icons() {
         className="text-black  rounded transition-all duration-300"
       >
         <FaWhatsapp
-          className="text-white hover:text-blue-600 p-1 box-content"
+          className="text-white hover:text-blue-600 p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"
           size={26}
         />
       </a>
@@ -24,13 +24,13 @@ export default function Icons() {
         className="text-black  rounded transition-all duration-300"
       >
         <FaLinkedinIn
-          className="text-white hover:text-[#0057BE] p-1 box-content"
+          className="text-white hover:text-[#0057BE] p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"
           size={26}
         />
       </a>
       <a href="#" className="text-black  rounded transition-all duration-300">
         <FaInstagram
-          className="text-white hover:text-[#0057BE] p-1 box-content"
+          className="text-white hover:text-[#0057BE] p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"
           size={26}
         />
       </a>
@@ -40,7 +40,7 @@ export default function Icons() {
         className="text-black  rounded transition-all duration-300"
       >
         <FaGithub
-          className="text-white hover:text-[#0057BE] p-1 box-content"
+          className="text-white hover:text-[#0057BE] p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"
           size={26}
         />
       </a>

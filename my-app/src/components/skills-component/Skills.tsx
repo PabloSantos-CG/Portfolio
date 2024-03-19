@@ -20,7 +20,7 @@ export default function Skills() {
           className="flex items-center xl:flex-1"
         >
           <div className="flex flex-col flex-[1.5] gap-y-3 xl:gap-y-5">
-            <h1 className="font-bold text-2xl md:text-4xl mb-3">
+            <h1 className="font-bold sm:text-4xl text-3xl mb-3">
               MINHAS <span className="inline-block xl:block">HABILIDADES</span>
             </h1>
 

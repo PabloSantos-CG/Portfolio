@@ -5,7 +5,7 @@ export default function ButtonSubmitForm() {
     <button
       className="
           flex items-center justify-center gap-x-3
-          w-max px-5 py-1
+          xl:w-max px-5 py-1
           font-semibold
           rounded-lg border border-gray-400 hover:border-blue-600
           transition-all duration-300 

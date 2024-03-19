@@ -35,8 +35,8 @@ export default function ServiceSlide() {
               <div className="text-4xl text-accent mb-4">{item.icon}</div>
 
               <div>
-                <div className="text-lg mb-2">{item.title}</div>
-                <p className="max-w-[350px] leading-normal text-gray-300">
+                <div className="text-base sm:text-lg mb-2">{item.title}</div>
+                <p className="max-w-[350px] leading-normal text-gray-300 text-xs sm:text-base">
                   {item.description}
                 </p>
               </div>

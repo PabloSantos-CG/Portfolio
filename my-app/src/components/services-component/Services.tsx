@@ -17,10 +17,10 @@ export default function Services() {
         transition={{ delay: 0.3, duration: 0.5 }}
         className="md:max-w-[640px] max-w-[440px] xl:w-1/3"
       >
-        <h1 className="font-bold text-2xl md:text-4xl mb-3">
+        <h1 className="font-bold sm:text-4xl text-3xl mb-3">
           MEUS <span className="inline-block xl:block">SERVIÇOS</span>
         </h1>
-        <p className="text-gray-300">
+        <p className="text-gray-300 text-xs sm:text-base">
           Explorando o vasto campo dos serviços de desenvolvimento web, serviços
           especializados que não só impulsionam, mas também elevam seu projeto a
           novos patamares. Ofereço soluções personalizadas, adaptadas para

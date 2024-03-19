@@ -15,9 +15,9 @@ export default function Contact() {
         initial={{ opacity: 0, y: 100 }}
         animate={isInView ? { opacity: 1, y: 0 } : undefined}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="xl:w-1/3"
+        className="xl:w-1/3 max-xl:h-[70vh] max-xl:flex max-xl:flex-col max-xl:justify-center"
       >
-        <h1 className="font-bold text-4xl mb-3">
+        <h1 className="font-bold sm:text-4xl text-3xl mb-3">
           VAMOS{" "}
           <span className="text-blue-600 inline-block xl:block">CONVERSAR</span>
         </h1>
@@ -32,10 +32,14 @@ export default function Contact() {
           className="
             flex items-center gap-x-3 
             bg-green-500 hover:bg-green-600 hover:text-gray-200 rounded font-semibold
-            w-max px-5 py-1 mt-6
+            w-max px-5 py-1 mt-6 text-xs sm:text-lg
           "
         >
-          WhatsApp <FaWhatsapp size={22} />
+          WhatsApp{" "}
+          <FaWhatsapp
+            size={22}
+            className="max-sm:w-[16.7px] max-sm:h-[16.4px]"
+          />
         </a>
       </motion.div>
 
@@ -44,7 +48,7 @@ export default function Contact() {
         initial={{ opacity: 0, y: -100 }}
         animate={isInView ? { opacity: 1, y: 0 } : undefined}
         transition={{ delay: 0.3, duration: 0.5 }}
-        className="xl:w-2/3"
+        className="xl:w-2/3 max-xl:h-screen max-xl:flex max-xl:flex-col max-xl:justify-center"
       >
         <ContactForm />
       </motion.div>

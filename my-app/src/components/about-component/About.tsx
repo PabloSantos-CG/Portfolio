@@ -9,7 +9,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex justify-between items-center  text-white">
+    <div className="flex justify-between items-center md:gap-x-3 text-white">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 100 }}
