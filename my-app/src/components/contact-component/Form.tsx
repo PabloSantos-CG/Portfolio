@@ -17,7 +17,7 @@ export default function ContactForm() {
   const handleSubmitForm: SubmitHandler<ContactFormTypeSchema> = (data) => {};
 
   return (
-    <div className="xl:w-2/3 max-xl:h-screen max-xl:flex max-xl:flex-col max-xl:justify-center">
+    <div className="xl:w-2/3 max-xl:flex max-xl:flex-col max-xl:justify-center">
       <form
         onSubmit={handleSubmit(handleSubmitForm)}
         className="flex flex-col gap-y-7 xl:mx-12 max-xl:max-w-[560px] m-auto"

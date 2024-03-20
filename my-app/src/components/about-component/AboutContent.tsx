@@ -6,7 +6,7 @@ export default function AboutContent() {
   return (
     <>
       <div className="flex flex-col flex-[1.5] gap-y-5 ">
-        <h1 className="font-bold sm:text-4xl text-3xl mb-3">SOBRE MIM</h1>
+        <h1 className="font-bold sm:text-4xl text-3xl mb-3">Sobre Mim</h1>
         <h2 className="font-bold sm:text-3xl text-2xl">
           Olá, me chamo <span className="text-[#0057BE]">Pablo</span>.
         </h2>

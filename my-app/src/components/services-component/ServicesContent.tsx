@@ -5,7 +5,7 @@ export default function ServicesContent() {
     <>
       <div className="md:max-w-[640px] max-w-[440px] xl:w-1/3">
         <h1 className="font-bold sm:text-4xl text-3xl mb-3">
-          MEUS <span className="inline-block xl:block">SERVIÇOS</span>
+          Meus <span className="inline-block xl:block">Serviços</span>
         </h1>
         <p className="text-gray-300 text-xs sm:text-base">
           Explorando o vasto campo dos serviços de desenvolvimento web, serviços

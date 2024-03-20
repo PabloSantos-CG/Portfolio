@@ -26,9 +26,12 @@ export default function Header() {
 
   return (
     <header className="w-full fixed top-0 left-0 z-50 backdrop-blur-lg bg-black md:bg-[#0000007d]">
-      <div className="container flex justify-between items-center m-auto pl-2 pr-2 text-white relative">
+      <div className="container flex max-md:flex-col justify-between items-center m-auto pl-2 pr-2 text-white relative">
         <Logo />
-        <button onClick={toggleMenu} className="md:hidden">
+        <button
+          onClick={toggleMenu}
+          className="md:hidden absolute right-0 sm:top-5  max-sm:top-3"
+        >
           <span>{isOpen ? <IoClose size={36} /> : <IoMenu size={36} />}</span>
         </button>
         <Nav toggleOpen={isOpen} />
