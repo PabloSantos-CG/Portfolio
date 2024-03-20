@@ -4,7 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import ButtonSubmitForm from "./ButtonSubmitForm";
 import emailjs from "@emailjs/browser";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function ContactForm() {
   const {
@@ -15,6 +16,18 @@ export default function ContactForm() {
   } = useForm<ContactFormTypeSchema>({
     resolver: zodResolver(ContactFormSchema),
   });
+
+  const notify = () =>
+    toast.success("E-mail enviado com sucesso!", {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
 
   const sendEmail: SubmitHandler<ContactFormTypeSchema> = ({
     name,
@@ -29,16 +42,12 @@ export default function ContactForm() {
       message,
     };
 
-    emailjs
-      .send("service_jwt4s4q", "template_x1bc4yn", templateParams, {
-        publicKey: "FBkG42FLa5e-vr6NG",
-      })
-      .then(
-        (res) => console.log("Enviado com sucesso!", res.status),
-        (err) => console.log(err)
-      );
+    emailjs.send("service_jwt4s4q", "template_x1bc4yn", templateParams, {
+      publicKey: "FBkG42FLa5e-vr6NG",
+    });
 
     reset({ name: "", email: "", message: "", subject: "" });
+    notify();
   };
 
   return (
@@ -101,6 +110,18 @@ export default function ContactForm() {
         </div>
         <ButtonSubmitForm />
       </form>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 }
