@@ -11,7 +11,7 @@ export default function Nav({ toggleOpen }: Props) {
       <ul
         className={`w-full max-md:bg-black max-md:py-9  max-md:left-0 max-md:top-4 ${
           !toggleOpen ? "hidden" : "flex"
-        }  max-md:flex-col max-md:gap-y-4 md:gap-x-9 items-center my-9 pr-4`}
+        }  max-md:flex-col max-md:gap-y-4 md:gap-x-9 items-center pr-4`}
       >
         {dataNav.map((value) => (
           <li key={value.id}>

@@ -24,6 +24,10 @@ export default function Header() {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    if (window.innerWidth > 768 && !isOpen) setIsOpen(true);
+  }, [])
+
   return (
     <header className="w-full fixed top-0 left-0 z-50 backdrop-blur-lg bg-black md:bg-[#0000007d]">
       <div className="container flex max-md:flex-col justify-between items-center m-auto pl-2 pr-2 text-white relative">
