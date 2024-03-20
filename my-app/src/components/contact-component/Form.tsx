@@ -3,6 +3,8 @@ import { ContactFormTypeSchema } from "@/types/ContactFormType";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { SubmitHandler, useForm } from "react-hook-form";
 import ButtonSubmitForm from "./ButtonSubmitForm";
+import emailjs from "@emailjs/browser";
+
 
 export default function ContactForm() {
   const {
@@ -14,12 +16,35 @@ export default function ContactForm() {
     resolver: zodResolver(ContactFormSchema),
   });
 
-  const handleSubmitForm: SubmitHandler<ContactFormTypeSchema> = (data) => {};
+  const sendEmail: SubmitHandler<ContactFormTypeSchema> = ({
+    name,
+    email,
+    message,
+    subject,
+  }) => {
+    const templateParams = {
+      name,
+      email,
+      subject,
+      message,
+    };
+
+    emailjs
+      .send("service_jwt4s4q", "template_x1bc4yn", templateParams, {
+        publicKey: "FBkG42FLa5e-vr6NG",
+      })
+      .then(
+        (res) => console.log("Enviado com sucesso!", res.status),
+        (err) => console.log(err)
+      );
+
+    reset({ name: "", email: "", message: "", subject: "" });
+  };
 
   return (
     <div className="xl:w-2/3 max-xl:flex max-xl:flex-col max-xl:justify-center">
       <form
-        onSubmit={handleSubmit(handleSubmitForm)}
+        onSubmit={handleSubmit(sendEmail)}
         className="flex flex-col gap-y-7 xl:mx-12 max-xl:max-w-[560px] m-auto"
       >
         <div className="flex justify-between gap-x-4 sm:gap-x-8">
