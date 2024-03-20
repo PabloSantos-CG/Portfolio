@@ -20,9 +20,9 @@ export default function Skills() {
       <div className="flex flex-col xl:flex-row xl:gap-x-12 xl:gap-y-8 gap-y-4 text-white">
         <div className="flex items-center xl:flex-1">
           <div className="flex flex-col flex-[1.5] gap-y-3 xl:gap-y-5">
-            <h1 className="font-bold sm:text-4xl text-3xl mb-3">
+            <h2 className="font-bold sm:text-4xl text-3xl mb-3">
               Minhas <span className="inline-block xl:block">Habilidades</span>
-            </h1>
+            </h2>
 
             <p className="text-gray-300 text-xs sm:text-base">
               Como desenvolvedor de software, estou sempre em busca de

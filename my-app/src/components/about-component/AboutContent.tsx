@@ -6,10 +6,10 @@ export default function AboutContent() {
   return (
     <>
       <div className="flex flex-col flex-[1.5] gap-y-5 ">
-        <h1 className="font-bold sm:text-4xl text-3xl mb-3">Sobre Mim</h1>
-        <h2 className="font-bold sm:text-3xl text-2xl">
+        <h2 className="font-bold sm:text-4xl text-3xl mb-3">Sobre Mim</h2>
+        <h3 className="font-bold sm:text-3xl text-2xl">
           Olá, me chamo <span className="text-[#0057BE]">Pablo</span>.
-        </h2>
+        </h3>
         <p className="text-gray-300 max-sm:text-xs">
           Sou um entusiasta do desenvolvimento web, sempre buscando aprender e
           evoluir. Minha jornada até aqui me permitiu mergulhar em tecnologias

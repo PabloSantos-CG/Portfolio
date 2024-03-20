@@ -45,6 +45,7 @@ export default function Banner() {
           href="https://www.linkedin.com/in/pablosantos-cg/"
           target="_blank"
           className="bg-white border hover:border-white hover:bg-black rounded transition-all duration-300"
+          aria-label="Confira meu linkedin"
         >
           <FaLinkedinIn
             className="text-black hover:text-white p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"
@@ -55,6 +56,7 @@ export default function Banner() {
           href="https://github.com/PabloSantos-CG"
           target="_blank"
           className="bg-white border hover:border-white hover:bg-black rounded duration-300"
+          aria-label="Confira meu github"
         >
           <FaGithub
             className="text-black hover:text-white p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"

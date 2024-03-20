@@ -1,7 +1,6 @@
 "use client";
 import { motion, useInView } from "framer-motion";
 import ContactForm from "./Form";
-import { FaWhatsapp } from "react-icons/fa";
 import { useRef } from "react";
 
 export default function Contact() {
@@ -17,10 +16,10 @@ export default function Contact() {
       className="flex flex-col xl:flex-row xl:items-center gap-y-8 xl:gap-x-8 text-white "
     >
       <div className="xl:w-1/3 max-xl:flex max-xl:flex-col max-xl:justify-center">
-        <h1 className="font-bold sm:text-4xl text-3xl mb-3 max-xl:text-center">
+        <h2 className="font-bold sm:text-4xl text-3xl mb-3 max-xl:text-center">
           Entre em{" "}
           <span className="text-blue-600 inline-block xl:block">Contato</span>
-        </h1>
+        </h2>
         <p className="text-gray-300 max-xl:hidden">
           Pronto para tornar suas ideias realidade? <br />
           Vamos discutir seu projeto e criar algo incrível juntos. Entre em
