@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((value) => !value);
@@ -19,7 +19,6 @@ export default function Header() {
 
   useEffect(() => {
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };

@@ -1,39 +1,21 @@
 "use client";
 import { motion, useInView } from "framer-motion";
-import ProjectsSlide from "./ProjectSlide";
 import { useRef } from "react";
+import ProjectsContent from "./ProjectsContent";
 
 export default function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex flex-col xl:flex-row justify-center xl:items-center xl:gap-x-8 gap-y-8 text-white">
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: 100 }}
-        animate={isInView ? { opacity: 1, y: 0 } : undefined}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="max-w-[640px] xl:w-1/3"
-      >
-        <h1 className="font-bold sm:text-4xl text-3xl mb-3">
-          MEUS <span className="inline-block xl:block">PROJETOS</span>
-        </h1>
-        <p className="text-gray-300 text-xs sm:text-base">
-          Explore minha coleção de projetos. Cada um demonstra meu compromisso
-          em criar soluções eficazes e alcançar resultados cada vez melhores.
-        </p>
-      </motion.div>
-
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: -100 }}
-        animate={isInView ? { opacity: 1, y: 0 } : undefined}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="xl:w-2/3 w-full flex"
-      >
-        <ProjectsSlide />
-      </motion.div>
-    </div>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -200 }}
+      animate={isInView ? { opacity: 1, x: 0 } : undefined}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className="flex flex-col xl:flex-row justify-center xl:items-center xl:gap-x-8 gap-y-8 text-white"
+    >
+      <ProjectsContent />
+    </motion.div>
   );
 }

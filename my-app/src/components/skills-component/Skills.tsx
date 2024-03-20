@@ -10,15 +10,15 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex justify-center items-center">
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -200 }}
+      animate={isInView ? { opacity: 1, x: 0 } : undefined}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className="flex justify-center items-center"
+    >
       <div className="flex flex-col xl:flex-row xl:gap-x-12 xl:gap-y-8 gap-y-4 text-white">
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
-          animate={isInView ? { opacity: 1, y: 0 } : undefined}
-          transition={{ delay: 0.3, duration: 0.5 }}
-          className="flex items-center xl:flex-1"
-        >
+        <div className="flex items-center xl:flex-1">
           <div className="flex flex-col flex-[1.5] gap-y-3 xl:gap-y-5">
             <h1 className="font-bold sm:text-4xl text-3xl mb-3">
               MINHAS <span className="inline-block xl:block">HABILIDADES</span>
@@ -36,15 +36,9 @@ export default function Skills() {
               juntos!
             </p>
           </div>
-        </motion.div>
+        </div>
 
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: -100 }}
-          animate={isInView ? { opacity: 1, y: 0 } : undefined}
-          transition={{ delay: 0.3, duration: 0.5 }}
-          className="xl:flex-1 h-44"
-        >
+        <div className="xl:flex-1 h-44">
           <div className="flex gap-x-8 mb-5 xl:mb-10">
             {titlesAbout.map((item, itemIndex) => (
               <button
@@ -98,8 +92,8 @@ export default function Skills() {
                   </li>
                 ))}
           </ul>
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

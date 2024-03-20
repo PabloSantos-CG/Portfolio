@@ -17,67 +17,65 @@ export default function ContactForm() {
   const handleSubmitForm: SubmitHandler<ContactFormTypeSchema> = (data) => {};
 
   return (
-    <form
-      onSubmit={handleSubmit(handleSubmitForm)}
-      className="flex flex-col gap-y-7 xl:mx-12 max-xl:max-w-[560px] m-auto"
-    >
-      <div className="flex justify-between gap-x-4 sm:gap-x-8">
-        <div className="flex-1">
+    <div className="xl:w-2/3 max-xl:h-screen max-xl:flex max-xl:flex-col max-xl:justify-center">
+      <form
+        onSubmit={handleSubmit(handleSubmitForm)}
+        className="flex flex-col gap-y-7 xl:mx-12 max-xl:max-w-[560px] m-auto"
+      >
+        <div className="flex justify-between gap-x-4 sm:gap-x-8">
+          <div className="flex-1">
+            <input
+              {...register("name")}
+              placeholder="Nome"
+              className="
+                input w-full capitalize
+              "
+            />
+            {errors.name && (
+              <p className="text-red-500 text-xs mt-2">
+                {errors.name.message as string}
+              </p>
+            )}
+          </div>
+          <div className="flex-1">
+            <input
+              {...register("email")}
+              placeholder="E-mail"
+              className="w-full input"
+            />
+            {errors.email && (
+              <p className="text-red-500 text-xs mt-2">
+                {errors.email.message as string}
+              </p>
+            )}
+          </div>
+        </div>
+        <div>
           <input
-            {...register("name")}
-            placeholder="Nome"
-            className="
-              input w-full capitalize
-            "
+            {...register("subject")}
+            placeholder="Assunto"
+            className="input w-full"
           />
-          {errors.name && (
+          {errors.subject && (
             <p className="text-red-500 text-xs mt-2">
-              {errors.name.message as string}
+              {errors.subject.message as string}
             </p>
           )}
         </div>
-
-        <div className="flex-1">
-          <input
-            {...register("email")}
-            placeholder="E-mail"
-            className="w-full input"
+        <div>
+          <textarea
+            {...register("message")}
+            placeholder="Faça uma breve descrição..."
+            className="input w-full h-[180px] pr-2 pt-2 pb-2 capitalize resize-none text-gray-200"
           />
-          {errors.email && (
+          {errors.message && (
             <p className="text-red-500 text-xs mt-2">
-              {errors.email.message as string}
+              {errors.message.message as string}
             </p>
           )}
         </div>
-      </div>
-
-      <div>
-        <input
-          {...register("subject")}
-          placeholder="Assunto"
-          className="input w-full"
-        />
-        {errors.subject && (
-          <p className="text-red-500 text-xs mt-2">
-            {errors.subject.message as string}
-          </p>
-        )}
-      </div>
-
-      <div>
-        <textarea
-          {...register("message")}
-          placeholder="Faça uma breve descrição..."
-          className="input w-full h-[180px] pr-2 pt-2 pb-2 capitalize resize-none text-gray-200"
-        />
-        {errors.message && (
-          <p className="text-red-500 text-xs mt-2">
-            {errors.message.message as string}
-          </p>
-        )}
-      </div>
-
-      <ButtonSubmitForm />
-    </form>
+        <ButtonSubmitForm />
+      </form>
+    </div>
   );
 }

@@ -9,14 +9,14 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="flex flex-col xl:flex-row xl:items-center gap-y-8 xl:gap-x-8 text-white">
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: 100 }}
-        animate={isInView ? { opacity: 1, y: 0 } : undefined}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="xl:w-1/3 max-xl:h-[70vh] max-xl:flex max-xl:flex-col max-xl:justify-center"
-      >
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, x: -200 }}
+      animate={isInView ? { opacity: 1, x: 0 } : undefined}
+      transition={{ delay: 0.3, duration: 0.5 }}
+      className="flex flex-col xl:flex-row xl:items-center gap-y-8 xl:gap-x-8 text-white"
+    >
+      <div className="xl:w-1/3 max-xl:h-[70vh] max-xl:flex max-xl:flex-col max-xl:justify-center">
         <h1 className="font-bold sm:text-4xl text-3xl mb-3">
           VAMOS{" "}
           <span className="text-blue-600 inline-block xl:block">CONVERSAR</span>
@@ -41,17 +41,9 @@ export default function Contact() {
             className="max-sm:w-[16.7px] max-sm:h-[16.4px]"
           />
         </a>
-      </motion.div>
+      </div>
 
-      <motion.div
-        ref={ref}
-        initial={{ opacity: 0, y: -100 }}
-        animate={isInView ? { opacity: 1, y: 0 } : undefined}
-        transition={{ delay: 0.3, duration: 0.5 }}
-        className="xl:w-2/3 max-xl:h-screen max-xl:flex max-xl:flex-col max-xl:justify-center"
-      >
-        <ContactForm />
-      </motion.div>
-    </div>
+      <ContactForm />
+    </motion.div>
   );
 }
