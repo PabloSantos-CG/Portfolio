@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
-      className="scrollbar-thin scrollbar-track-transparent scrollbar-thumb-slate-600"
+      className="scroll-smooth scrollbar-thin scrollbar-track-transparent scrollbar-thumb-slate-600"
     >
       <body className={`${inter.className} bg-black`}>
         <Header />

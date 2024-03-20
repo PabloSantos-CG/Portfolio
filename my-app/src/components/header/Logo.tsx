@@ -10,7 +10,7 @@ export default function Logo() {
     <div
       className={`${livvic.className} text-center hover:text-slate-400 w-max mr-auto p-2`}
     >
-      <a href="#Home">
+      <a href="/">
         <span className={`font-medium text-xl sm:text-3xl`}>P</span>
         <span
           className={`font-medium text-xl sm:text-3xl relative right-1 sm:right-[6px]`}
