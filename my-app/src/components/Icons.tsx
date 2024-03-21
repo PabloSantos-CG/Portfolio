@@ -11,7 +11,7 @@ export default function Icons() {
       <a
         href="https://api.whatsapp.com/send?phone=5571997061783&text=Ol%C3%A1,%20Pablo.%20Gostaria%20de%20conversar%20sobre%20um%20projeto"
         target="_blank"
-        className="text-black  rounded transition-all duration-300"
+        className="text-black rounded transition-all duration-300"
         aria-label="Entre em contato comigo pelo whatsapp"
       >
         <FaWhatsapp
