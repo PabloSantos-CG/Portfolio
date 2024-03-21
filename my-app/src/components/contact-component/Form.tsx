@@ -35,16 +35,17 @@ export default function ContactForm() {
     message,
     subject,
   }) => {
-    const templateParams = {
-      name,
-      email,
-      subject,
-      message,
-    };
+    // Parado para testes no projeto //
+    // const templateParams = {
+    //   name,
+    //   email,
+    //   subject,
+    //   message,
+    // };
 
-    emailjs.send("service_jwt4s4q", "template_x1bc4yn", templateParams, {
-      publicKey: "FBkG42FLa5e-vr6NG",
-    });
+    // emailjs.send("service_jwt4s4q", "template_x1bc4yn", templateParams, {
+    //   publicKey: "FBkG42FLa5e-vr6NG",
+    // });
 
     reset({ name: "", email: "", message: "", subject: "" });
     notify();
