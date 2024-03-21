@@ -25,7 +25,7 @@ export default function Banner() {
       >
         Navegando pelo vasto universo do desenvolvimento web com entusiasmo em
         criar soluções digitais envolventes e eficientes, estou comprometido em
-        tornar seus projetos uma realidade.
+        tornar seus projetos uma realidade.{" "}
         <strong>Juntos, vamos construir algo incrível!</strong>
       </p>
 
