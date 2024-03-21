@@ -7,7 +7,7 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["700"] });
 
 export default function Banner() {
   return (
-    <div className="flex flex-col justify-center h-full">
+    <div className="max-w-screen-sm flex flex-col justify-center h-full">
       <h1
         className={`${poppins.className}
         bg-gradient-to-r from-white from-10% to-slate-600 to-80%
@@ -18,18 +18,14 @@ export default function Banner() {
       <h2
         className={`${poppins.className} text-[#898989] text-lg sm:text-2xl my-2`}
       >
-        ESTOU AQUI PARA TRANSFORMAR SUAS IDEIAS <br />
-        EM REALIDADE!
+        ESTOU AQUI PARA TRANSFORMAR SUAS IDEIAS EM REALIDADE!
       </h2>
       <p
         className={`${montserrat.className} text-gray-300 text-xs sm:text-base`}
       >
-        Navegando pelo vasto universo do desenvolvimento web com entusiasmo
-        <br />
-        em criar soluções digitais envolventes e eficientes, estou comprometido
-        <br />
-        em tornar seus projetos uma realidade.
-        <br />
+        Navegando pelo vasto universo do desenvolvimento web com entusiasmo em
+        criar soluções digitais envolventes e eficientes, estou comprometido em
+        tornar seus projetos uma realidade.
         <strong>Juntos, vamos construir algo incrível!</strong>
       </p>
 
