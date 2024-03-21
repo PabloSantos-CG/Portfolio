@@ -43,8 +43,8 @@ export default function ContactForm() {
     //   message,
     // };
 
-    // emailjs.send("service_jwt4s4q", "template_x1bc4yn", templateParams, {
-    //   publicKey: "FBkG42FLa5e-vr6NG",
+    // emailjs.send("SERVICE", "TEMPLATE", TEMPLATE_PARAMS, {
+    //   publicKey: "PUBLIC_KEY",
     // });
 
     reset({ name: "", email: "", message: "", subject: "" });
