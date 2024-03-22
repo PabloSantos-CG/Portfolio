@@ -34,7 +34,7 @@ export default function Header() {
         <Logo />
         <button
           onClick={toggleMenu}
-          className="md:hidden absolute right-0 sm:top-5  max-sm:top-3"
+          className="md:hidden absolute right-2 sm:top-5  max-sm:top-3"
         >
           <span>{isOpen ? <IoClose size={36} /> : <IoMenu size={36} />}</span>
         </button>

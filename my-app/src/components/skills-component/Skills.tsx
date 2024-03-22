@@ -30,11 +30,6 @@ export default function Skills() {
               natural me impulsiona a melhorar continuamente, e sou apaixonado
               por criar soluções com propósito.
             </p>
-
-            <p className="font-semibold text-gray-300 text-xs sm:text-base">
-              Vamos colaborar para construir algo verdadeiramente incrível
-              juntos!
-            </p>
           </div>
         </div>
 

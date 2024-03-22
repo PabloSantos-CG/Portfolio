@@ -23,8 +23,7 @@ export default function AboutContent() {
           qualidade.
         </p>
         <p className="font-semibold text-gray-300 max-sm:text-xs">
-          Vamos colaborar e levar sua presença online para o próximo nível
-          juntos.
+          Vamos colaborar e levar sua presença online para o próximo nível.
         </p>
         <Icons />
       </div>
