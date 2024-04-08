@@ -7,6 +7,7 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaDocker
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -55,6 +56,7 @@ export const aboutSkills = {
         <FaGitAlt title="Git" size={22} key={nanoid(5)} />,
         <SiJest title="Jest" size={22} key={nanoid(5)} />,
         <FaFigma title="Figma" size={22} key={nanoid(5)} />,
+        <FaDocker title="Docker" size={22} key={nanoid(5)} />,
       ],
     },
   ],
