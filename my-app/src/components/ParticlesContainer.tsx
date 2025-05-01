@@ -19,11 +19,11 @@ const ParticlesContainer = () => {
 
   const options: ISourceOptions = useMemo(
     () => ({
-      background: {
-        color: {
-          value: "",
-        },
-      },
+      // background: {
+      //   color: {
+      //     value: "#c6c6c6",
+      //   },
+      // },
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -94,6 +94,7 @@ const ParticlesContainer = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        className="absolute inset-0 -z-10"
       />
     );
   }

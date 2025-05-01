@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   creator: "Pablo Santos Cezar Gomes",
   title: "Pablo Santos Cezar Gomes | FullStack Developer",
   description:
-    "Programador, capacitado para atender a suas demandas e executar seus projetos. Especializado em tecnologias não só do Front-End, com React.Js e Next.js, como também do Back-End, utilizando Node.Js.",
+    "Programador, capacitado para atender a suas demandas e executar seus projetos. Especializado em tecnologias não só do Front-End, com React.Js e Next.js, como também do Back-End, utilizando Node.Js., Python e PHP.",
 };
 
 export default function RootLayout({

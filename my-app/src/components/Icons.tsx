@@ -31,16 +31,6 @@ export default function Icons() {
         />
       </a>
       <a
-        href="#"
-        className="text-black  rounded transition-all duration-300"
-        aria-label="Entre em contato comigo pelo instagram"
-      >
-        <FaInstagram
-          className="text-white hover:text-[#0057BE] p-1 box-content max-sm:w-[16.7px] max-sm:h-[16.4px]"
-          size={26}
-        />
-      </a>
-      <a
         href="https://github.com/PabloSantos-CG"
         target="_blank"
         className="text-black  rounded transition-all duration-300"

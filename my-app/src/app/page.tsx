@@ -7,6 +7,7 @@ import ContactSection from "@/components/ContactSection.";
 import ParticlesContainer from "@/components/ParticlesContainer";
 
 export default function Home() {
+  
   return (
     <div>
       <HomeSection />
