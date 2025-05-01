@@ -1,22 +1,13 @@
 "use client";
-import { useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { useState } from "react";
 import { aboutSkills, aboutAcademic, titlesAbout } from "@/data/dataAbout";
 import { nanoid } from "nanoid";
 
 export default function Skills() {
   const [index, setIndex] = useState(0);
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, x: -200 }}
-      animate={isInView ? { opacity: 1, x: 0 } : undefined}
-      transition={{ delay: 0.3, duration: 0.5 }}
-      className="flex justify-center items-center"
-    >
+    <div className="flex justify-center items-center">
       <div className="flex flex-col xl:flex-row xl:gap-x-12 xl:gap-y-8 gap-y-4 text-white">
         <div className="flex items-center xl:flex-1">
           <div className="flex flex-col flex-[1.5] gap-y-3 xl:gap-y-5">
@@ -89,6 +80,6 @@ export default function Skills() {
           </ul>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
