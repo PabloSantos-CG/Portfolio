@@ -7,7 +7,9 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
-  FaDocker
+  FaDocker,
+  FaPython,
+  FaPhp
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -18,6 +20,8 @@ import {
   SiExpress,
   SiSequelize,
   SiJest,
+  SiMysql,
+  SiSqlite,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { nanoid } from "nanoid";
@@ -33,7 +37,7 @@ export const aboutSkills = {
         <FaCss3 title="Css" size={22} key={nanoid(5)} />,
         <FaJs title="JavaScript" size={22} key={nanoid(5)} />,
         <SiTypescript title="TypeScript" size={22} key={nanoid(5)} />,
-        <SiSass title="Sass" size={22} key={nanoid(5)} />,
+        // <SiSass title="Sass" size={22} key={nanoid(5)} />,
         <FaBootstrap title="Bootstrap" size={22} key={nanoid(5)} />,
         <SiTailwindcss title="TailwindCss" size={22} key={nanoid(5)} />,
         <FaReact title="React.Js" size={22} key={nanoid(5)} />,
@@ -44,19 +48,23 @@ export const aboutSkills = {
       title: "Back-End",
       icons: [
         <FaNodeJs title="Node.Js" size={22} key={nanoid(5)} />,
+        <FaPython title="Python" size={22} key={nanoid(5)} />, //python
+        <FaPhp title="PHP(aprendendo)" size={22} key={nanoid(5)} />, //php
         <BiLogoPostgresql title="PostgreSQL" size={22} key={nanoid(5)} />,
+        <SiMysql title="MySQL" size={22} key={nanoid(5)} />,
+        <SiSqlite title="SqLite3" size={22} key={nanoid(5)} />,
         <SiMongodb title="MongoDB" size={22} key={nanoid(5)} />,
         <SiExpress title="Express" size={22} key={nanoid(5)} />,
-        <SiSequelize title="Sequelize" size={22} key={nanoid(5)} />,
+        <SiSequelize title="SequelizeORM" size={22} key={nanoid(5)} />,
       ],
     },
     {
       title: "Outros",
       icons: [
         <FaGitAlt title="Git" size={22} key={nanoid(5)} />,
+        <FaDocker title="Docker" size={22} key={nanoid(5)} />,
         <SiJest title="Jest" size={22} key={nanoid(5)} />,
         <FaFigma title="Figma" size={22} key={nanoid(5)} />,
-        <FaDocker title="Docker" size={22} key={nanoid(5)} />,
       ],
     },
   ],
@@ -70,11 +78,11 @@ export const aboutAcademic = {
       institution: "UniFECAF. ",
       date: "2023 - 2025",
     },
-    {
-      id: nanoid(),
-      course: "Desenvolvimento FullStack Javascript - ",
-      institution: "OneBitCode. ",
-      date: "2023",
-    },
+    // {
+    //   id: nanoid(),
+    //   course: "Desenvolvimento FullStack Javascript - ",
+    //   institution: "OneBitCode. ",
+    //   date: "2023",
+    // },
   ],
 };
